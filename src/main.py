@@ -3,9 +3,9 @@ from typing import AsyncGenerator
 
 import sentry_sdk
 from fastapi import FastAPI
-from redis import asyncio as aioredis
 from starlette.middleware.cors import CORSMiddleware
 
+from redis import asyncio as aioredis
 from src import redis
 from src.auth.router import router as auth_router
 from src.config import app_configs, settings
